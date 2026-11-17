@@ -1,0 +1,37 @@
+# Secrets. .env holds the Toast client secret. Never commit it.
+.env
+.env.backup-*
+*.backup-*
+
+# Real restaurant data. This repo ships synthetic data only.
+SalesSummary*/
+data/raw/SalesSummary*
+data/processed/
+data/*.sqlite3
+data/*.sqlite3-wal
+data/*.sqlite3-shm
+.covers_forecast_config.json
+
+# Environments
+.venv/
+.venv-api/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Written per-restaurant at runtime
+recurring_events.json
+data/venue_geocode_cache.json
+
+# NOTE: data/walk_forward_accuracy.json is deliberately NOT ignored. The page
+# reads it at runtime to quote an honest error figure; without it a deployment
+# silently falls back to the optimistic in-process hold-out number.

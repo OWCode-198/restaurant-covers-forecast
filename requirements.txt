@@ -1,0 +1,4 @@
+# Hosting platforms look for this filename. The real list lives in
+# requirements-api.txt, which is also what the local .venv-api is built from,
+# so the two environments cannot drift apart.
+-r requirements-api.txt

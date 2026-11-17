@@ -1,0 +1,10 @@
+{
+  "mae": 10.31,
+  "mape": 17.6,
+  "baseline_weekday_avg_mae": 11.24,
+  "forecasts": 432,
+  "origins": 62,
+  "horizon": 7,
+  "through": "2026-10-16",
+  "generated": "2026-10-19"
+}
